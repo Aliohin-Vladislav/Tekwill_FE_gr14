@@ -23,7 +23,7 @@
 
 Чтобы узнать больше о синтаксесе **Markdown*, вы можете обратиться к следующим ссылкам:
 
-* [Официальная страница Markdown](#https://www.markdownguide.org/)
+* [Официальная страница Markdown](https://www.markdownguide.org/)
 
 * [Основной синтаксис Markdown](https://www.markdownguide.org/cheat-sheet/)
 
