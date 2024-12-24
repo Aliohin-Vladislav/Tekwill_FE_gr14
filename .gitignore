@@ -1,3 +1,2 @@
-/.local
-/.local.txt
-/.temp.txt
+local/
+temp.txt
