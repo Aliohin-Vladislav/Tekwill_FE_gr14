@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<form>
+  <fieldset>
+    <legend>Basic User Information:</legend>
+  
+    <label for="name">Full name:</label>
+    <input type="text" id="name" name="name" required>
+<br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+<label for="cpassword">Confirm password:</label>
+<input type="password" id="cpassword" name="cpassword" required>
+<br>
+<label>Gender:</label>
+<input type="radio" id="gender1" name="gender">
+<label for="gender1">Male</label>
+<input type="radio" id="gender2" name="gender">
+<label for="gender2">Female</label>
+<input type="radio" id="gender3" name="gender">
+<label for="gender3">Other</label>
+<br>
+<label for="date">Date of Birth:</label>
+<input type="date" id="date" name="date">
+
+</fieldset>
+
+
+<fieldset>
+<legend>Address Information:</legend>
+<label for="textarea">Street Address:</label>
+<textarea name="textarea" id="textarea" ></textarea>
+<br>
+<label for="select">Country:</label>
+<select name="select" id="select">
+    <option value="USA">USA</option>
+    <option value="UK">UK</option>
+    <option value="Moldova">Moldova</option>
+    <option value="Mexico">Mexico</option>
+    <option value="Vietnam">Vietnam</option>
+</select>
+<br>
+<label for="City">City:</label>
+<input type="text" name="City" id="City">
+<br>
+<label for="post">Postal Code:</label>
+<input type="number" id="post" name="post" min="0" max="9999">
+
+
+</fieldset>
+
+<fieldset>
+<legend>Preferences:</legend>
+<label>Preferred Contact Method:</label>
+<input type="checkbox" id="checkbox1" name="checkbox1">
+<label for="checkbox1">Email</label>
+<input type="checkbox" id="checkbox2" name="checkbox2">
+<label for="checkbox2">Phone</label>
+<input type="checkbox" id="checkbox3" name="checkbox3">
+<label for="checkbox3">Postal Mail</label>
+<br>
+<label for="color">Favorite Color:</label>
+<input type="color" name="color" id="color">
+
+</fieldset>
+
+<fieldset>
+<legend>Additional Details:</legend>
+<label for="how">How did you hear about us?</label>
+<select id="how" name="how">
+    <option value="Internet">Internet</option>
+    <option value="Friends">Friends</option>
+    <option value="Advertising">Advertising</option>
+    <option value="Other">Other</option>
+</select>
+<br>
+<label for="feedback">Feedback/Comments:</label>
+<textarea id="feedback" name="feedback"></textarea>
+
+</fieldset>
+
+<fieldset>
+<legend>Profile:</legend>
+<label for="file">Upload a Profile Picture:</label>
+<input type="file" id="file" name="file" accept="image/jpg, image/png">
+<br>
+<label for="url">Website URL:</label>
+<input type="url" id="url" name="url">
+<br>
+<label for="range">Experience Level with HTML:</label>
+<input type="range" id="range" name="range" min="1" max="10" oninput="displayValue.value=range.value">
+<output id="displayValue">6</output>
+
+</fieldset>
+<input type="submit">
+<input type="reset">
+</form>
