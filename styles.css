@@ -1,0 +1,39 @@
+ 
+
+#title {
+    color: blue;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+p {
+    color: #435FCD;
+}
+
+ol {
+    color: #435FCD; 
+}
+
+ul {
+    color: #435FCD; 
+}
+
+h2 {
+    color: #3252D2;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #3252D2;
+    text-transform: uppercase;
+}
+
+h3.special1{
+    color: #38AC89;
+}
+
+p.special2 {
+    color: #38AC89;
+}
+
+
