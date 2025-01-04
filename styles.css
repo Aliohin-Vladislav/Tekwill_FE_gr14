@@ -36,4 +36,82 @@ p.special2 {
     color: #38AC89;
 }
 
+a:hover {
+    color: black;
+}
 
+body p {
+    font-size: 16px;
+}
+
+body h1:nth-of-type(1)#title {
+    color: blueviolet;
+}
+
+ol li:nth-child(even) {
+    color: blueviolet;
+}
+
+ul.list2 li:nth-last-child(2) {
+    color: blueviolet;
+}
+
+h1 {
+    font-size: 2rem;
+    background-color: rgba(152, 153, 161, 0.5);
+    width: 405px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+} 
+
+body p {
+    font-size: 1em;
+}
+
+html {
+    margin-left: 160px;
+    flex-grow: 1;
+}
+
+.navmenu {
+            width: 120px;       
+            height: 100vh;      
+            background-color: #343634; 
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+nav ul {
+    list-style-type: none;
+    padding: 15px;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: hsl(0, 5%, 72%); 
+    font-size: 20px;
+}
+
+nav ul li a:before {
+    content: "•";
+    padding-right: 5px;
+}
+nav ul li a:after {
+    content: "•";
+    padding-left: 5px;
+}
+
+img[alt="code"] {
+    width: calc(50% + 150px);
+}
