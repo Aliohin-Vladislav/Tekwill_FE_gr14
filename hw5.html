@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<h1>📘 The Code Magazine</h1>
+<head>
+    <style>
+        .message {
+            color: white;
+            background-color: #6D7EC1;
+            position: fixed;
+            bottom: 20px;       
+            right: 20px;        
+            padding: 10px 20px;     
+            cursor: pointer;  
+        }
+    </style>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: hsl(0, 5%, 72%);">
+<h1 id="title">📘 The Code Magazine</h1>
 
 <h2>The Basic Language of the Web: HTML</h2>
 
 
 
-   <img src="img/laura-jones.jpg" width="100px" "Laura Jones"> 
+   <img src="img/laura-jones.jpg" width="100px" alt="Laura Jones"> 
    <p> 
    Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
 </p>
-   <img src="img/post-img.jpg" width="500px" "code"> 
+   <img src="img/post-img.jpg" alt="code"> 
    <p>
    All modern websites and web applications are built using three <i>fundamental</i> technologies: HTML, CSS and <br> JavaScript. These are the languages of the web.
 <br>
@@ -20,9 +35,9 @@
    In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should learn it.
 </p>
 
-<p>
-<h3>What is HTML?</h3>
 
+<h3 class="special1">What is HTML?</h3>
+<p class="special2">
 
 HTML stands for <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage. It's a markup language that web developers use to structure and <br> describe the content of a webpage (not a programming language).
 <br>
@@ -38,11 +53,11 @@ In HTML, each element is made up of 3 parts:
 </ol>
 
 </p>
-<p>
-    <h3>Why should you learn HTML?</h3>
 
+    <h3>Why should you learn HTML?</h3>
+    <p>
     There are countless reasons for learning the fundamental language of the web. Here are 5 of them:
-<ul>
+<ul class="list2">
     <li>To be able to use the fundamental web dev language</li>
     <li>To hand-craft beautiful websites instead of relying on tools like Worpress or Wix</li>
     <li>To build web applications</li>
@@ -50,6 +65,18 @@ In HTML, each element is made up of 3 parts:
     <li>To have fun 😃</li>
 </ul>
 </p>
+<button style="font-weight: bold; font-style: italic;" class="message">Send message</button>
+</body>
 
+<span class="navmenu">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+</span>  <!-- Вкладка слева -->
 
 </html>
