@@ -1,26 +1,68 @@
 
-div.container {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background-color: black;
-    margin: 150px auto;
-    border: 40px solid red;
-    box-shadow: 0 0 300px 70px rgba(0, 0, 0, 1);
-    
+header {
+    background-color: #4e4c4c;
+    color: white;
+    padding: 20px;
+    font-family:"Roboto", serif;
 }
 
-div.content{
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+   
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+.menu li a:hover {
+   color: #b70505;
+}
+
+.dropdown {
+    display: none;
+    position: absolute; 
+    top: 100%;  
+    left: 0;    
+    background-color: rgb(37, 37, 37);
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+    margin-left: 0;
     width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: green;
-    margin: 145px auto;
-    border: 5px solid white;
-    background: radial-gradient(circle, green 20%, white 80%);
 }
 
-h1 {
-    font-size: 80px;
-    text-shadow: 4px 4px 4px orange, -4px -4px 4px purple;
-    margin: 20px 20%;
+.dropdown li a {
+    display: block;
+  
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover .dropdown {
+    display: block;
+}
+
+.menu li:hover .link {
+    text-decoration:underline;
+}
+
