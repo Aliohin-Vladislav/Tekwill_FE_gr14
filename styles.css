@@ -1,0 +1,10 @@
+.container {
+display: grid;
+grid-template-areas: 
+"menu menu menu menu menu"
+"l_sidebar img1 img1 img2 r_sidebar"
+"l_sidebar img1 img1 img3 r_sidebar"
+"l_sidebar img4 img5 img3 r_sidebar"
+"l_sidebar img6 img7 img8 r_sidebar"
+"footer footer footer footer footer";
+}
