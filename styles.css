@@ -10,7 +10,7 @@ body {
     border: lightskyblue, 3px, solid;
     padding: 10px;
     position: relative;
-    display: inline-block;
+    display: flex;
     opacity: 0;
     transform: translateX(-100%);
     animation: appearance 1s ease-out 1s forwards;
@@ -27,11 +27,14 @@ body {
     }
 }
 
-.Trigger {
+.trigger {
     margin: 10px;
     border: red, 3px, solid;
     position: relative;
 }
+
+
+
 
 .tooltip {
     visibility: visible;
@@ -48,72 +51,66 @@ body {
     z-index: 2;
 }
 
-.top1:hover .top2,
-.right1:hover .right2,
-.bottom1:hover .bottom2,
-.left1:hover .left2 {
+.trigger:hover .tooltip {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.5s ease, visibility 0s;
 }
 
-.top1 .top2 {
+.top .tooltip {
     bottom: 170% ;
     left: 50%;
     transform: translateX(-50%);
 }
-.right1 .right2 {
+.right .tooltip {
     top: 50%;
     left: 120%;
     transform: translateY(-50%);
 }
-.bottom1 .bottom2 {
+.bottom .tooltip {
     top: 170%;
     left: 50%;
     transform: translateX(-50%);
 }
-.left1 .left2 {
+.left .tooltip {
     top: 50%;
     left: -240%;
     transform: translateY(-50%);
 }
 
-.top2::before {
+
+
+
+.tooltip::before {
     content: "";
     position: absolute;
+    transform: translateX(-50%);
+}
+
+.top .tooltip::before {
     bottom: -10px; 
     left: 50%;
-    transform: translateX(-50%);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid gray; 
 }
-.right2::before {
-    content: "";
-    position: absolute;
+.right .tooltip::before {
     top: auto;
     left: -4px;
-    transform: translateX(-50%);
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-right: 10px solid gray;
 }
-.bottom2::before {
-    content: "";
-    position: absolute;
+.bottom .tooltip::before {
     top: -8px; 
     left: 50%;
-    transform: translateX(-50%);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid gray;
 }
-.left2::before {
-    content: "";
-    position: absolute;
+.left .tooltip::before {
     top: auto;
     left: 163px;
-    transform: translateX(-50%);
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 10px solid gray; 
