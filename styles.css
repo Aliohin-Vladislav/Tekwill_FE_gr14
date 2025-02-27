@@ -1,3 +1,4 @@
+
 body {
     background-color: skyblue;
 }
@@ -171,3 +172,191 @@ body {
 
     
  
+=======
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+.container {
+    border: lightskyblue, 3px, solid;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: appearance 1s ease-out 1s forwards;
+}
+
+@keyframes appearance {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.trigger {
+    margin: 10px;
+    border: red, 3px, solid;
+    position: relative;
+}
+
+
+
+
+.tooltip {
+    visibility: visible;
+    background-color: gray;
+    border-radius: 5%;
+    margin-right: 5px;
+    padding: 10px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+    width: 140px;
+
+    z-index: 2;
+}
+
+.trigger:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0s;
+}
+
+.top .tooltip {
+    bottom: 170% ;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.right .tooltip {
+    top: 50%;
+    left: 120%;
+    transform: translateY(-50%);
+}
+.bottom .tooltip {
+    top: 170%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.left .tooltip {
+    top: 50%;
+    left: -240%;
+    transform: translateY(-50%);
+}
+
+
+
+
+.tooltip::before {
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.top .tooltip::before {
+    bottom: -10px; 
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid gray; 
+}
+.right .tooltip::before {
+    top: auto;
+    left: -4px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid gray;
+}
+.bottom .tooltip::before {
+    top: -8px; 
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid gray;
+}
+.left .tooltip::before {
+    top: auto;
+    left: 163px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid gray; 
+}
+=======
+
+header {
+    background-color: #4e4c4c;
+    color: white;
+    padding: 20px;
+    font-family:"Roboto", serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+   
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+.menu li a:hover {
+   color: #b70505;
+}
+
+.dropdown {
+    display: none;
+    position: absolute; 
+    top: 100%;  
+    left: 0;    
+    background-color: rgb(37, 37, 37);
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+    margin-left: 0;
+    width: 100px;
+}
+
+.dropdown li a {
+    display: block;
+  
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover .dropdown {
+    display: block;
+}
+
+.menu li:hover .link {
+    text-decoration:underline;
+}
+
